@@ -1,5 +1,7 @@
 package com.KL.projeto06.Service;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
 import com.KL.projeto06.Model.ModelEntity.Usuario;
@@ -12,4 +14,6 @@ public interface UsuarioService {
     Usuario salvarUsuario(Usuario usuario);
 
     void validarEmail(String email);
+
+    Optional<Usuario> obterPorId(Long id);
 }
